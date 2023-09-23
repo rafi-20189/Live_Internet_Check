@@ -11,7 +11,7 @@
 ## Getting Started
 
 ### Step 1.
-First add permission (AndroidManifest)
+- First add permission (AndroidManifest)
 ```bash
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -23,7 +23,7 @@ First add permission (AndroidManifest)
 
 
 ### Step 2. 
-Add the dependency for using Lottie (build.gradle)
+- Add the dependency for using Lottie (build.gradle)
 ```bash
    
     implementation "com.airbnb.android:lottie:6.0.1"
@@ -31,7 +31,7 @@ Add the dependency for using Lottie (build.gradle)
 
 
 ### Step 3. 
-Create a Java class named "NetworkChangeReceiver" then paste the following codes
+- Create a Java class named "NetworkChangeReceiver" then paste the following codes
 ```bash
    public class NetworkChangeReceiver extends BroadcastReceiver {
 
@@ -66,12 +66,12 @@ Create a Java class named "NetworkChangeReceiver" then paste the following codes
 ```
 
 ### Step 4. 
-Download a no internet Lottie animation json file named "no_internet_anim" and paste it inside res >> raw
+- Download a no internet Lottie animation json file named "no_internet_anim" and paste it inside res >> raw
 
 
     
 ### Step 5. 
-Create custom alert dialog xml file named "no_internet_dialog" inside res >> layout folder then paste the following codes
+- Create custom alert dialog xml file named "no_internet_dialog" inside res >> layout folder then paste the following codes
 ```bash
 
 <?xml version="1.0" encoding="utf-8"?>
