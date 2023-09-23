@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NetworkChangeReceiver.NetworkChangeListener{
 
-    NetworkChangeReceiver networkChangeReceiver;
     AlertDialog dialog;
+    NetworkChangeReceiver networkChangeReceiver = new NetworkChangeReceiver(this);
 
 
     @Override
@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements NetworkChangeRece
         setContentView(R.layout.activity_main);
 
 
-        networkChangeReceiver = new NetworkChangeReceiver(this);
 
     }
 
