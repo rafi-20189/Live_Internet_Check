@@ -1,6 +1,12 @@
 
 ![Logo](https://i.ibb.co/VWctWJs/Untitled-design.png)
 
+## Features
+
+- Live internet check❤
+- Show custom alert dialog💖
+- Offline Dinosaur Game😍
+
 
 ## Getting Started
 
