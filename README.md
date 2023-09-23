@@ -2,13 +2,7 @@
 ![Logo](https://i.ibb.co/VWctWJs/Untitled-design.png)
 
 
-
-
-
-
-
-
-## Installation
+## Getting Started
 
 Install my-project with npm
 
