@@ -10,6 +10,9 @@
 
 ## Getting Started
 
+### [Explore the video docs »](https://www.youtube.com/watch?v=S1YOLeu0WHE).
+### 
+
 ### Step 1.
 - First add permission (AndroidManifest)
 ```bash
@@ -30,7 +33,7 @@
 ```
 
 ### Step 3. 
-- [Download a no internet Lottie animation](https://lottiefiles.com/). json file named "no_internet_anim" and paste it inside res >> raw
+- [Download a no internet Lottie animation](https://lottiefiles.com/). file named "no_internet_anim" and paste it inside res >> raw
 
 
 ### Step 4. 
