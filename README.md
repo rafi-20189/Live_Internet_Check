@@ -30,7 +30,7 @@
 ```
 
 ### Step 3. 
-- [Download a no internet Lottie animation] (https://lottiefiles.com/) json file named "no_internet_anim" and paste it inside res >> raw
+- [Download a no internet Lottie animation](https://lottiefiles.com/). json file named "no_internet_anim" and paste it inside res >> raw
 
 
 ### Step 4. 
