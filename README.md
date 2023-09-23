@@ -1,5 +1,5 @@
 
-![Logo]([https://i.ibb.co/VWctWJs/Untitled-design.png](https://i.ibb.co/pdW0GSx/Orange-Professional-Smart-Spark-Creative-Agency-Logo-512-512-px.png))
+![Logo](https://i.ibb.co/pdW0GSx/Orange-Professional-Smart-Spark-Creative-Agency-Logo-512-512-px.png)
 
 ## Features
 
