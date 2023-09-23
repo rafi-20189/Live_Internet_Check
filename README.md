@@ -10,6 +10,7 @@
 
 ## Getting Started
 
+### Step 1.
 First add permission in Manifest
 ```bash
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,9 +19,9 @@ First add permission in Manifest
 ```
 
 
-## Use the library for lottie animation
 
-First add permission in Manifest
+### Step 2. 
+Add the dependency for using Lottie (build.gradle)
 ```bash
    //============= For Lottie ======================
     implementation "com.airbnb.android:lottie:6.0.1"
