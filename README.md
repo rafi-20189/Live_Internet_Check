@@ -4,16 +4,13 @@
 
 ## Getting Started
 
-Install my-project with npm
-
+First add permission in Manifest
 ```bash
-  npm install my-project
-  cd my-project
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 ```
     
-## Optimizations
-
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 
 
 
