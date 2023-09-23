@@ -10,7 +10,7 @@
 
 ## Getting Started
 
-### [Explore the video docs »](https://www.youtube.com/watch?v=S1YOLeu0WHE).
+### [Explore the video docs »](https://www.youtube.com/watch?v=).
 ### 
 
 ### Step 1.
@@ -178,6 +178,98 @@
 </androidx.constraintlayout.widget.ConstraintLayout>
     
 ```
+
+### Step 6. 
+- implements the mathod in your activity
+```bash
+   
+    implements NetworkChangeReceiver.NetworkChangeListener
+```
+
+### Step 7. 
+- Initialize the class in your activity
+```bash
+
+AlertDialog dialog;
+NetworkChangeReceiver networkChangeReceiver = new NetworkChangeReceiver(this);
+
+```
+
+
+### Step 8. 
+- Add the custom alert dialog mathod in your activity 
+```bash
+
+    private void ShowDialog() {
+
+        dialog = new AlertDialog.Builder(MainActivity.this)
+                .setView(R.layout.no_internet_dialog)
+                .setCancelable(false)
+                .create();
+        dialog.show();
+
+
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.transparent));
+
+
+        TextView playButton = dialog.findViewById(R.id.playButton);
+
+        playButton.setOnClickListener(view->{
+
+            Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show();
+        });
+
+
+    }
+
+```
+
+
+
+### Step 9. 
+- Change your "onNetworkChanged" mathod
+```bash
+
+ @Override
+    public void onNetworkChanged(boolean isConnected) {
+        if (isConnected) {
+
+            if (dialog != null && dialog.isShowing()) {
+                dialog.dismiss();
+                dialog = null;
+            }
+
+        } else {
+
+            if (dialog == null || !dialog.isShowing()) {
+
+                ShowDialog();
+            }
+
+        }
+    }
+
+```
+
+
+### Step 10. 
+- Check network with onStart & onStop Mathod
+```bash
+
+ @Override
+    protected void onStart() {
+        super.onStart();
+        registerReceiver(networkChangeReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        unregisterReceiver(networkChangeReceiver);
+    }
+
+```
+
 
     
 
