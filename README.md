@@ -11,7 +11,7 @@
 ## Getting Started
 
 ### Step 1.
-First add permission in Manifest
+First add permission (AndroidManifest)
 ```bash
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
