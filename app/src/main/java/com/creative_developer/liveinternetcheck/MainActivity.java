@@ -3,6 +3,7 @@ package com.creative_developer.liveinternetcheck;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements NetworkChangeRece
 
         playButton.setOnClickListener(view->{
 
-            Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), GamePlayActivity.class));
         });
 
 
